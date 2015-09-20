@@ -1,0 +1,60 @@
+.vertical-scrolling{
+  background:{
+    color:#95899f;
+    size:cover;
+  }
+  padding: 50px;
+  color:white;
+
+  &.date{
+    background:{
+      image:url(../images/gallery/lazers.jpg);
+    }
+  }
+  &.location{
+    background:{
+      image:url(../images/rustbelt.jpg);
+    }
+  }
+  &.timeline{
+    background:{
+      image:url(../images/gallery/shredderCats.jpg);
+      size: 50%;
+      position: center 0;
+    }
+  }
+  &.photos{
+    .horizontal-scrolling{
+      background:{
+        size:cover;
+      }
+    }
+    .horizontal-scrolling-1{
+      background:{
+        image:url(../images/gallery/babe.jpg);
+      }
+    }
+    .horizontal-scrolling-2{
+      background:{
+        image:url(../images/gallery/boat.jpg);
+        size:cover;
+      }
+    }
+
+  }
+  &.registry{
+    background:{
+      image:url(../images/gallery/masks.jpg);
+    }
+  }
+  &.party{
+    background:{
+      image:url(../images/gallery/tinyhats.jpg);
+    }
+  }
+  &.contact{
+    background:{
+      image:url(../images/gallery/sushi.jpg);
+    }
+  }
+}

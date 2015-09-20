@@ -1,0 +1,23 @@
+.vertical-scrolling {
+  background-color: #95899f;
+  background-size: cover;
+  padding: 50px;
+  color: white; }
+  .vertical-scrolling.date {
+    background-image: url(../images/gallery/lazers.jpg); }
+  .vertical-scrolling.location {
+    background-image: url(../images/rustbelt.jpg); }
+  .vertical-scrolling.timeline {
+    background-image: url(../images/gallery/shredderCats.jpg); }
+  .vertical-scrolling.photos .horizontal-scrolling-1 {
+    background-image: url(../images/gallery/babe.jpg); }
+  .vertical-scrolling.photos .horizontal-scrolling-2 {
+    background-image: url(../images/gallery/boat.jpg); }
+  .vertical-scrolling.registry {
+    background-image: url(../images/gallery/masks.jpg); }
+  .vertical-scrolling.party {
+    background-image: url(../images/gallery/tinyhats.jpg); }
+  .vertical-scrolling.contact {
+    background-image: url(../images/gallery/sushi.jpg); }
+
+/*# sourceMappingURL=_backgrounds.css.map */

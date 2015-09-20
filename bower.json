@@ -1,0 +1,28 @@
+{
+  "name": "sydandsteve",
+  "version": "1.0.0",
+  "authors": [
+    "Steve Barman <steve@stevebarman.com>"
+  ],
+  "description": "marriage is great",
+  "main": "server.js",
+  "moduleType": [
+    "es6",
+    "node"
+  ],
+  "keywords": [
+    "fun"
+  ],
+  "license": "icr",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5",
+    "html5-boilerplate": "~5.2.0"
+  }
+}
