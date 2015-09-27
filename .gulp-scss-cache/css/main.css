@@ -3297,27 +3297,40 @@ input[type="button"].btn-block {
 .vertical-scrolling {
   background-color: #95899f;
   background-size: cover;
+  background-position: center;
   padding: 50px;
   color: white; }
+  .vertical-scrolling a:link {
+    text-decoration: underline; }
   .vertical-scrolling.date {
     background-image: url(../images/gallery/lazers.jpg); }
   .vertical-scrolling.location {
     background-image: url(../images/rustbelt.jpg); }
   .vertical-scrolling.timeline {
     background-image: url(../images/gallery/shredderCats.jpg);
-    background-size: 50%;
-    background-position: center 0; }
-  .vertical-scrolling.photos .horizontal-scrolling {
-    background-size: cover; }
-  .vertical-scrolling.photos .horizontal-scrolling-1 {
-    background-image: url(../images/gallery/babe.jpg); }
-  .vertical-scrolling.photos .horizontal-scrolling-2 {
-    background-image: url(../images/gallery/boat.jpg);
-    background-size: cover; }
+    background-size: contain;
+    background-position: center top; }
+    .vertical-scrolling.timeline ul {
+      transform: translateY(-150%); }
+  .vertical-scrolling.photos {
+    background-color: #fefefe; }
+    .vertical-scrolling.photos .horizontal-scrolling {
+      background-size: cover;
+      background-position: center; }
+    .vertical-scrolling.photos .horizontal-scrolling-1 {
+      background-image: url(../images/gallery/babe.jpg); }
+    .vertical-scrolling.photos .horizontal-scrolling-2 {
+      background-image: url(../images/gallery/boat.jpg);
+      background-size: contain; }
   .vertical-scrolling.registry {
     background-image: url(../images/gallery/masks.jpg); }
   .vertical-scrolling.party {
     background-image: url(../images/gallery/tinyhats.jpg); }
+    .vertical-scrolling.party .fp-tableCell {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      align-content: center; }
   .vertical-scrolling.contact {
     background-image: url(../images/gallery/sushi.jpg); }
 
@@ -3431,7 +3444,7 @@ ul, li {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .logo {
   line-height: 18px;
-  top: 9px;
+  top: -12px;
   position: relative;
   text-shadow: 3px 3px 1px #111, 4px 4px 1px #95899f; }
   .logo a {
@@ -3520,20 +3533,13 @@ nav {
   opacity: 1;
   padding: 80px 0;
   z-index: 15;
-  height: calc(90vh - 70px); }
+  height: calc(100vh); }
 
 nav ul {
-  padding: 0 10px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
+  padding: 0 10px; }
 
 nav li {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1; }
+  font-size: 12px; }
 
 nav li a {
   font-size: 2em;
@@ -3584,6 +3590,9 @@ h3 {
   height: 8px;
   margin: -4px 0 0 -4px; }
 
+.fp-slidesNav ul li a span {
+  background: #111; }
+
 #fp-nav ul li a.active span,
 .fp-slidesNav ul li a.active span,
 #fp-nav ul li:hover a.active span,
@@ -3624,5 +3633,9 @@ h3 {
     padding: 3px; } }
 p {
   white-space: pre-line; }
+
+.shade {
+  padding: 30px;
+  background-color: rgba(17, 17, 17, 0.8); }
 
 /*# sourceMappingURL=main.css.map */

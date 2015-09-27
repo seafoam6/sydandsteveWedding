@@ -208,7 +208,7 @@ ul, li {
 .logo{
   line-height: 18px;
   
-  top: 9px;
+  top: -12px;
   position: relative;
   text-shadow: 3px 3px 1px #111, 4px 4px 1px #95899f;
   a{
@@ -311,22 +311,17 @@ nav {
 	opacity: 1;
  	padding: 80px 0;
 	z-index: 15;
-	height: calc(90vh - 70px);
+	height: calc(100vh);
 }
 
 nav ul {
 	padding: 0 10px;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
+
 }
 
 nav li {
-	-webkit-box-flex: 1;
-	-webkit-flex: 1;
-	    -ms-flex: 1;
-	        flex: 1;
+
+          font-size:12px;
 }
 
 nav li a {
@@ -393,7 +388,9 @@ h3 {
 	height: 8px;
 	margin: -4px 0 0 -4px;
 }
-
+.fp-slidesNav ul li a span{
+  background:#111;
+}
 #fp-nav ul li a.active span, 
 .fp-slidesNav ul li a.active span, 
 #fp-nav ul li:hover a.active span, 
@@ -450,4 +447,10 @@ p{
   white-space:pre-line;
 }
 
+.shade{
+  padding: 30px;
+  background:{
+    color:rgba(#111,.8);
+  }
+}
 
