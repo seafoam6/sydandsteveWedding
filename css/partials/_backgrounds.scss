@@ -25,10 +25,13 @@
     background:{
       image:url(../images/gallery/shredderCats.jpg);
       size:contain;
-      position: center top;
+      position: center center;
     }
     ul{
       transform:translateY(-150%);
+      @media screen and (max-width: 500px){
+        transform:translateY(0);
+      }
     }
   }
   &.photos{
@@ -37,19 +40,59 @@
     }
     .horizontal-scrolling{
       background:{
-        size:cover;
+        size:contain;
         position:center;
       }
     }
     .horizontal-scrolling-1{
       background:{
-        image:url(../images/gallery/babe.jpg);
+        image:url(../images/gallery/instagram.jpg);
+        
       }
     }
     .horizontal-scrolling-2{
       background:{
         image:url(../images/gallery/boat.jpg);
-        size:contain;
+      }
+    }
+    .horizontal-scrolling-3{
+      background:{
+        image:url(../images/gallery/arcade.jpg);
+      }
+    }
+.horizontal-scrolling-4{
+      background:{
+        image:url(../images/gallery/coopBox.jpg);
+      }
+    }
+.horizontal-scrolling-5{
+      background:{
+        image:url(../images/gallery/degrassi2.jpg);
+      }
+    }
+.horizontal-scrolling-6{
+      background:{
+        image:url(../images/gallery/halloween2.jpg);
+      }
+    }
+.horizontal-scrolling-7{
+      background:{
+        image:url(../images/gallery/babe.jpg);
+      }
+    }
+.horizontal-scrolling-8{
+      background:{
+        image:url(../images/gallery/nye2.jpg);
+      }
+    }
+.horizontal-scrolling-9{
+      background:{
+        image:url(../images/gallery/tinyhats.jpg);
+      }
+    }
+    .horizontal-scrolling-10{
+      background:{
+        image:url(../images/gallery/whirly.jpg);
       }
     }
 
@@ -58,17 +101,37 @@
     background:{
       image:url(../images/gallery/masks.jpg);
     }
+    p{
+      background: rgba(0,0,0,0.4);
+      padding: 20px;
+    }
   }
   &.party{
-
     background:{
       image:url(../images/gallery/tinyhats.jpg);
+      size:contain;
+    }
+    .shade{
+      margin-bottom:10px;
+    }
+    li{
+      text-align: left;
+      position:relative;
+      padding-left:28px;
+      span{
+        position:absolute;
+        left:2px;
+        top:3px;
+      }
     }
     .fp-tableCell{
       display: flex;
       flex-direction:row;
       align-items:center;
       align-content:center;
+      @media screen and (max-width: 500px){
+        flex-direction:column;
+      }
     }
   }
   &.contact{
